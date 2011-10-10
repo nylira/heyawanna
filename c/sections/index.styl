@@ -17,130 +17,131 @@ textarea, select, input
   m 0
 
 body.home.index
-  #content
-    p.tagline
-      f 2em sans
-      m 0 0 1.5em
-    form
-      bg b4
-      b 1px solid #ddd
-      border-radius 5px
-      fieldset
-        legend
-          d block
-          w 100%
-          f bold 115% sans
-          c link
-          m 0
-          p x
-          bg #fff
-          bb 1px solid #ddd
-          bt 1px solid #fff
-        &:first-of-type
-          legend
-            border-radius 4px 4px 0 0
-
-      label
-        lh x*2
-        d block
-      
-    form.signup
-      label, input
-        display block
-      select
-        m .4em 0
-
-    ul.rows
-      li.row
-        clearfix()
-        p .5em .5em 1em
-        bt 1px solid #fff
-        bb 1px solid #ddd
-        &.name
-          ul.fields
-            li.field
-              w 50%
-              input
-                w 100%
-        &.solo
-          p .5em 1em 1em
-          input, select, textarea
-            w 100%
-          textarea
-            h 9em
-
-        &.location, &.hs
-          ul.fields
-            li.field
-              &.city, &.school
-                w 50%
-              &.state, &.year
-                w 25%
-              &.zipcode, &.gpa
-                w 25%
-              input, select
-                w 100%
-
-        &.act, &.sat
-          p
-            w cw*2 - x*.5 - 1px
-            float left
-            p 0 x*.5
-            lh 2em
-          ul.fields
-            w cw*6 - x*.5 - 1px
-            float left
-            label
-              s 75%
-              c link
-            input
-              w 100%
-        &.sat
-          li.field
-            w 33.3333333%
-        &.act
-          li.field
-            w 20%
-        &.distance
-          p .5em 1em 1em
-          p
-            lh 2em
-          ul.radio
-            clearfix()
-            li
-              col 3
-              input[type=radio]
-                d inline
-              label
-                d inline
-        &.submit
-          ml cw*2
-          input
-            span 4
-            f bold 1.25em/2.4 sans
-
-    ul.fields
+  #main
+    b 1px solid #ddd
+    ul.tabs
       clearfix()
-      li.field
+      li.tab
         float left
-        p 0 .5em
+        br 1px solid #ddd
+        lh 2em
+        p 0 1em
+        &.active
+          bg #fff
+          fw bold
+          lh x*2 + 1px
+          mb -1px
+          a
+            c txt
 
+    ul.feeds
+      bg #fff
+      li.feed
+        ul.posts
+          li.post
+            p 1.5em 0
+            clearfix()
+            bt 1px solid #ddd
+
+            .left
+              w 120px
+              float left
+              m 0 1em
+              .thumbnail
+                p 4px
+                b 1px solid #ccc
+                border-radius 5px
+                box-shadow b30 0 0 1em
+                mb 1.5em
+
+                .img
+                  d block
+                  w 110px
+                  h 70px
+                  bg link
+                  c #fff
+                  f bold 2em/70px sans
+                  ta center
+
+              .interest
+                p 0 5px
+                p
+                  s 12px
+                  c dim
+                  mb .5em
+                ul.avatars
+                  li.avatar
+                    float left
+                    w 24px
+                    h 24px
+                    p 3px
+                    b 1px solid #ddd
+                    c dim
+                    ta center
+                    lh 16px
+                    bg #ccc
+                    m 0 8px 8px 0
+
+            .avatar
+              float left
+              mr x
+              .avatar
+                h 40px
+                w 40px
+                bg #999
+
+            .content
+              w cw*6 - 40px - 2*x
+              float left
+              p.title a
+                f bold 125%/1.3 sans
+                c txt
+                .time
+                  c dim
+              .desc
+                c dim
+                s 12px
+
+              ul.comments
+                pt 1.5em
+                s 12px
+                li.comment
+                  p .5em
+                  bg b4
+                  bt 1px solid #fff
+                  bb 1px solid #ddd
+                  clearfix()
+                  &.form
+                    input
+                      w 100%
+                      s 12px
+                  .avatar
+                    width 32px
+                    height 32px
+                    bg #999
+                    float left
+                    mr .75em
+                  .body
+                    float left
+                    a.author
+                      fw bold
+                    p.meta
+                      c dim
+
+            ul.actions
+              col 1
+              pl 1em
+              li
+                &.join
+                  mb .5em
+                &.steal a
+                  c dim
+                  s 12px
+                  
+              
   #sidebar
-    a.mentor
-      d block
-      m 0 0 x*3
-      ta right
-
-    ul.faces
-      li
-        f bold 4em sans
-        ta center
-        c #bbb
-        aa()
-        ls -3px
-        w cw*4 - x*6
-        lhh cw*4 - x*6
-        b 1px solid #ddd
-        bg m250
-        border-radius 5px
-        m 0 0 x*3
+    pl 1.5em
+    form
+      border-radius 5px
+      border 1px solid #ddd
+      p 1.5em

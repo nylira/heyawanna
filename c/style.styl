@@ -1,7 +1,9 @@
 x = 14px
 txt = #222
 dim = #999
-hl = hsl(25,100,50)
+
+hue2 = 345
+hl = hsl(hue2,100,50)
 
 df()
   s x
@@ -9,7 +11,7 @@ df()
   ff sans
   c #333
 
-lhue = 23
+lhue = 335
 link = hsl(lhue,100,50)
 hover = hsl(lhue,100,60)
 
@@ -21,7 +23,6 @@ anchor()
   td none
   &:hover, &:focus
     c hover
-
 a
   anchor()
 
@@ -33,11 +34,10 @@ body
     cnt()
 
   #main
-    col 8
+    col 9
 
   #sidebar
-    col 4
-    p 0 x*3
+    col 3
 
 @import 'partials/header'
 @import 'partials/footer'

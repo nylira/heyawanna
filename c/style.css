@@ -18,79 +18,83 @@ span.amp{font-family:Baskerville,Palatino,"Book Antiqua",Georgia,"serif";font-st
 *:rselection{background:#ffffe0}
 *::-moz-selection{background:#ffffe0}
 *::-webkit-selection{background:#ffffe0}
-.button,input[type=submit],button{display:inline-block;padding:0 .7em;font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;line-height:26px;color:#fff;text-align:center;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,0.50) 0 0 5px;background:#cc4e00;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ff6200), color-stop(1, #993b00));background:-webkit-linear-gradient(top, #ff6200 0%, #993b00 100%);background:-moz-linear-gradient(top, #ff6200 0%, #993b00 100%);background:linear-gradient(top, #ff6200 0%, #993b00 100%);-webkit-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;border:1px solid #ff6200;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;cursor:pointer;}
-.button:hover,input[type=submit]:hover,button:hover,.button:focus,input[type=submit]:focus,button:focus{color:#fff;background:#e65800;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ff711a), color-stop(1, #b34400));background:-webkit-linear-gradient(top, #ff711a 0%, #b34400 100%);background:-moz-linear-gradient(top, #ff711a 0%, #b34400 100%);background:linear-gradient(top, #ff711a 0%, #b34400 100%)}
-.button:active,input[type=submit]:active,button:active{color:#fff;background:#ff6200;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #e65800), color-stop(0.45, #993b00));background:-webkit-linear-gradient(top, #e65800 0%, #993b00 45%);background:-moz-linear-gradient(top, #e65800 0%, #993b00 45%);background:linear-gradient(top, #e65800 0%, #993b00 45%)}
-a{color:#ff6200;text-decoration:none;}
-a:hover,a:focus{color:#ff8133}
+.button,input[type=submit],button{display:inline-block;padding:0 .7em;font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;line-height:26px;color:#fff;text-align:center;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,0.50) 0 0 5px;background:#c05;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ff006a), color-stop(1, #990040));background:-webkit-linear-gradient(top, #ff006a 0%, #990040 100%);background:-moz-linear-gradient(top, #ff006a 0%, #990040 100%);background:linear-gradient(top, #ff006a 0%, #990040 100%);-webkit-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;border:1px solid #ff006a;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;cursor:pointer;}
+.button:hover,input[type=submit]:hover,button:hover,.button:focus,input[type=submit]:focus,button:focus{color:#fff;background:#e60060;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ff1a79), color-stop(1, #b3004a));background:-webkit-linear-gradient(top, #ff1a79 0%, #b3004a 100%);background:-moz-linear-gradient(top, #ff1a79 0%, #b3004a 100%);background:linear-gradient(top, #ff1a79 0%, #b3004a 100%)}
+.button:active,input[type=submit]:active,button:active{color:#fff;background:#ff006a;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #e60060), color-stop(0.45, #990040));background:-webkit-linear-gradient(top, #e60060 0%, #990040 45%);background:-moz-linear-gradient(top, #e60060 0%, #990040 45%);background:linear-gradient(top, #e60060 0%, #990040 45%)}
+a{color:#ff006a;text-decoration:none;}
+a:hover,a:focus{color:#f38}
 body{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;background:#fff;}
 body #content{width:960px;margin:0 auto;zoom:1}
 body #content:before,body #content:after{content:"";display:table}
 body #content:after{clear:both}
-body #main{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:}
-body #sidebar{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:0 42px}
-header.site{border-top:3px solid #ff6200;border-bottom:1px solid #ddd;margin:0 0 3em;}
-header.site nav{width:960px;margin:0 auto;zoom:1;}
+body #main{width:720px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:}
+body #sidebar{width:240px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:}
+header.site{margin:0 0 1.5em;border-top:3px solid #888;border-bottom:1px solid #ddd;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(1, #e6e6e6));background:-webkit-linear-gradient(top, #fafafa 0%, #e6e6e6 100%);background:-moz-linear-gradient(top, #fafafa 0%, #e6e6e6 100%);background:linear-gradient(top, #fafafa 0%, #e6e6e6 100%);}
+header.site nav{width:960px;margin:0 auto;zoom:1;border-right:1px solid rgba(255,255,255,0.30);border-left:1px solid rgba(255,255,255,0.30);}
 header.site nav:before,header.site nav:after{content:"";display:table}
 header.site nav:after{clear:both}
-header.site nav ul{zoom:1;}
+header.site nav ul{border-left:1px solid rgba(0,0,0,0.10);zoom:1;}
 header.site nav ul:before,header.site nav ul:after{content:"";display:table}
 header.site nav ul:after{clear:both}
-header.site nav ul li.branding{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
-header.site nav ul li.branding h1 a{display:block;font:bold 2em/3 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-1px;color:#222}
-header.site nav ul li.login{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:1.5em 0 .75em 160px;zoom:1;}
-header.site nav ul li.login:before,header.site nav ul li.login:after{content:"";display:table}
-header.site nav ul li.login:after{clear:both}
-header.site nav ul li.login ul.fields li.field{width:160px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:0 .5em;}
-header.site nav ul li.login ul.fields li.field input[type=email],header.site nav ul li.login ul.fields li.field input[type=password]{width:100%}
-header.site nav ul li.login ul.fields li.field input[type=submit]{padding:0 1.5em}
-header.site nav ul li.login ul.fields li.link{padding:0 7px;font-size:75%;line-height:21px;}
-header.site nav ul li.login ul.fields li.link a{color:#222;}
-header.site nav ul li.login ul.fields li.link a:hover{color:#ff8133}
+header.site nav ul li{float:left;border-right:1px solid rgba(0,0,0,0.10);zoom:1;position:relative;((null)):0;((null)):0;}
+header.site nav ul li:before,header.site nav ul li:after{content:"";display:table}
+header.site nav ul li:after{clear:both}
+header.site nav ul li a{border-right:1px solid #fff;border-left:1px solid #fff;display:block;padding:0 1em;line-height:42px;color:#222;text-shadow:#fff 0 1px 0;}
+header.site nav ul li a:hover{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.30)), color-stop(0.3, rgba(255,255,255,0.10)), color-stop(1, rgba(0,0,0,0.01)));background:-webkit-linear-gradient(top, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.10) 30%, rgba(0,0,0,0.01) 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.10) 30%, rgba(0,0,0,0.01) 100%);background:linear-gradient(top, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.10) 30%, rgba(0,0,0,0.01) 100%)}
+header.site nav ul li.active:after{content:"";display:block;width:100%;height:3px;background:#ff006a;position:absolute;top:-3px;left:0}
+header.site nav ul li.active a{color:#ff006a}
+header.site nav ul li.search form{border-right:1px solid rgba(255,255,255,0.30);border-left:1px solid rgba(255,255,255,0.30);padding:7px 1em;}
+header.site nav ul li.search form input{-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em;width:240px;padding-left:.5em}
+header.site nav ul li.branding h1 a{font:bold italic 1.25em Georgia,"serif";letter-spacing:-1px;line-height:42px;color:fff}
+header.site nav ul li.events-ideas:after{content:"";display:block;height:42px;width:1px;background:#fff;position:absolute;top:0;right:-2px}
+header.site nav ul li.user,header.site nav ul li.menu{float:right}
+header.site nav ul li.user{border-left:1px solid rgba(0,0,0,0.10);}
+header.site nav ul li.user:before{content:"";display:block;height:42px;width:1px;background:#fff;position:absolute;top:0;left:-2px}
+header.site nav ul li.user a{zoom:1;}
+header.site nav ul li.user a:before,header.site nav ul li.user a:after{content:"";display:table}
+header.site nav ul li.user a:after{clear:both}
+header.site nav ul li.user a .avatar{font:65% "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;width:28px;height:28px;line-height:28px;margin:7px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:inset rgba(0,0,0,0.30) 1px 1px 3px;-moz-box-shadow:inset rgba(0,0,0,0.30) 1px 1px 3px;box-shadow:inset rgba(0,0,0,0.30) 1px 1px 3px;margin-left:0;background:rgba(0,0,0,0.15);float:left}
+header.site nav ul li.user a span.name{display:block;float:left}
 footer.site{width:960px;margin:0 auto;zoom:1;border-top:1px solid #ddd;margin:3em auto;line-height:3em}
 footer.site:before,footer.site:after{content:"";display:table}
 footer.site:after{clear:both}
 input[type=text],input[type=password],input[type=number],input[type=email],textarea{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;border-top:1px solid #999;border-right:1px solid #bbb;border-bottom:1px solid #ccc;border-left:1px solid #aaa;padding:2.5px .25em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:160px;-webkit-box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;-moz-box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 input[type=text],input[type=password],input[type=number],input[type=email]{width:160px}
 textarea,select,input{margin:0}
-body.home.index #content p.tagline{font:2em "Helvetica Neue",Arial,Helvetica,sans-serif;margin:0 0 1.5em}
-body.home.index #content form{background:rgba(0,0,0,0.04);border:1px solid #ddd;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
-body.home.index #content form fieldset legend{display:block;width:100%;font:bold 115% "Helvetica Neue",Arial,Helvetica,sans-serif;color:#ff6200;margin:0;padding:14px;background:#fff;border-bottom:1px solid #ddd;border-top:1px solid #fff}
-body.home.index #content form fieldset:first-of-type legend{-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0}
-body.home.index #content form label{line-height:28px;display:block}
-body.home.index #content form.signup label,body.home.index #content form.signup input{display:block}
-body.home.index #content form.signup select{margin:.4em 0}
-body.home.index #content ul.rows li.row{zoom:1;padding:.5em .5em 1em;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
-body.home.index #content ul.rows li.row:before,body.home.index #content ul.rows li.row:after{content:"";display:table}
-body.home.index #content ul.rows li.row:after{clear:both}
-body.home.index #content ul.rows li.row.name ul.fields li.field{width:50%;}
-body.home.index #content ul.rows li.row.name ul.fields li.field input{width:100%}
-body.home.index #content ul.rows li.row.solo{padding:.5em 1em 1em;}
-body.home.index #content ul.rows li.row.solo input,body.home.index #content ul.rows li.row.solo select,body.home.index #content ul.rows li.row.solo textarea{width:100%}
-body.home.index #content ul.rows li.row.solo textarea{height:9em}
-body.home.index #content ul.rows li.row.location ul.fields li.field.city,body.home.index #content ul.rows li.row.hs ul.fields li.field.city,body.home.index #content ul.rows li.row.location ul.fields li.field.school,body.home.index #content ul.rows li.row.hs ul.fields li.field.school{width:50%}
-body.home.index #content ul.rows li.row.location ul.fields li.field.state,body.home.index #content ul.rows li.row.hs ul.fields li.field.state,body.home.index #content ul.rows li.row.location ul.fields li.field.year,body.home.index #content ul.rows li.row.hs ul.fields li.field.year{width:25%}
-body.home.index #content ul.rows li.row.location ul.fields li.field.zipcode,body.home.index #content ul.rows li.row.hs ul.fields li.field.zipcode,body.home.index #content ul.rows li.row.location ul.fields li.field.gpa,body.home.index #content ul.rows li.row.hs ul.fields li.field.gpa{width:25%}
-body.home.index #content ul.rows li.row.location ul.fields li.field input,body.home.index #content ul.rows li.row.hs ul.fields li.field input,body.home.index #content ul.rows li.row.location ul.fields li.field select,body.home.index #content ul.rows li.row.hs ul.fields li.field select{width:100%}
-body.home.index #content ul.rows li.row.act p,body.home.index #content ul.rows li.row.sat p{width:152px;float:left;padding:0 7px;line-height:2em}
-body.home.index #content ul.rows li.row.act ul.fields,body.home.index #content ul.rows li.row.sat ul.fields{width:472px;float:left;}
-body.home.index #content ul.rows li.row.act ul.fields label,body.home.index #content ul.rows li.row.sat ul.fields label{font-size:75%;color:#ff6200}
-body.home.index #content ul.rows li.row.act ul.fields input,body.home.index #content ul.rows li.row.sat ul.fields input{width:100%}
-body.home.index #content ul.rows li.row.sat li.field{width:33.3333333%}
-body.home.index #content ul.rows li.row.act li.field{width:20%}
-body.home.index #content ul.rows li.row.distance{padding:.5em 1em 1em;}
-body.home.index #content ul.rows li.row.distance p{line-height:2em}
-body.home.index #content ul.rows li.row.distance ul.radio{zoom:1;}
-body.home.index #content ul.rows li.row.distance ul.radio:before,body.home.index #content ul.rows li.row.distance ul.radio:after{content:"";display:table}
-body.home.index #content ul.rows li.row.distance ul.radio:after{clear:both}
-body.home.index #content ul.rows li.row.distance ul.radio li{width:240px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
-body.home.index #content ul.rows li.row.distance ul.radio li input[type=radio]{display:inline}
-body.home.index #content ul.rows li.row.distance ul.radio li label{display:inline}
-body.home.index #content ul.rows li.row.submit{margin-left:160px;}
-body.home.index #content ul.rows li.row.submit input{width:320px;font:bold 1.25em/2.4 "Helvetica Neue",Arial,Helvetica,sans-serif}
-body.home.index #content ul.fields{zoom:1;}
-body.home.index #content ul.fields:before,body.home.index #content ul.fields:after{content:"";display:table}
-body.home.index #content ul.fields:after{clear:both}
-body.home.index #content ul.fields li.field{float:left;padding:0 .5em}
-body.home.index #sidebar a.mentor{display:block;margin:0 0 42px;text-align:right}
-body.home.index #sidebar ul.faces li{font:bold 4em "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;color:#bbb;-webkit-font-smoothing:antialiased;letter-spacing:-3px;width:236px;height:236px;line-height:236px;border:1px solid #ddd;background:#fafafa;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin:0 0 42px}
+body.home.index #main{border:1px solid #ddd;}
+body.home.index #main ul.tabs{zoom:1;}
+body.home.index #main ul.tabs:before,body.home.index #main ul.tabs:after{content:"";display:table}
+body.home.index #main ul.tabs:after{clear:both}
+body.home.index #main ul.tabs li.tab{float:left;border-right:1px solid #ddd;line-height:2em;padding:0 1em;}
+body.home.index #main ul.tabs li.tab.active{background:#fff;font-weight:bold;line-height:29px;margin-bottom:-1px;}
+body.home.index #main ul.tabs li.tab.active a{color:#222}
+body.home.index #main ul.feeds{background:#fff;}
+body.home.index #main ul.feeds li.feed ul.posts li.post{padding:1.5em 0;zoom:1;border-top:1px solid #ddd;}
+body.home.index #main ul.feeds li.feed ul.posts li.post:before,body.home.index #main ul.feeds li.feed ul.posts li.post:after{content:"";display:table}
+body.home.index #main ul.feeds li.feed ul.posts li.post:after{clear:both}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left{width:120px;float:left;margin:0 1em;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail{padding:4px;border:1px solid #ccc;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:rgba(0,0,0,0.30) 0 0 1em;-moz-box-shadow:rgba(0,0,0,0.30) 0 0 1em;box-shadow:rgba(0,0,0,0.30) 0 0 1em;margin-bottom:1.5em;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail .img{display:block;width:110px;height:70px;background:#ff006a;color:#fff;font:bold 2em/70px "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest{padding:0 5px;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest p{font-size:12px;color:#999;margin-bottom:.5em}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest ul.avatars li.avatar{float:left;width:24px;height:24px;padding:3px;border:1px solid #ddd;color:#999;text-align:center;line-height:16px;background:#ccc;margin:0 8px 8px 0}
+body.home.index #main ul.feeds li.feed ul.posts li.post .avatar{float:left;margin-right:14px;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .avatar .avatar{height:40px;width:40px;background:#999}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content{width:412px;float:left;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content p.title a{font:bold 125%/1.3 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#222;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content p.title a .time{color:#999}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content .desc{color:#999;font-size:12px}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments{padding-top:1.5em;font-size:12px;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment{padding:.5em;background:rgba(0,0,0,0.04);border-top:1px solid #fff;border-bottom:1px solid #ddd;zoom:1;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment:before,body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment:after{content:"";display:table}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment:after{clear:both}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment.form input{width:100%;font-size:12px}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment .avatar{width:32px;height:32px;background:#999;float:left;margin-right:.75em}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment .body{float:left;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment .body a.author{font-weight:bold}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment .body p.meta{color:#999}
+body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions{width:80px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding-left:1em;}
+body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.join{margin-bottom:.5em}
+body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.steal a{color:#999;font-size:12px}
+body.home.index #sidebar{padding-left:1.5em;}
+body.home.index #sidebar form{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border:1px solid #ddd;padding:1.5em}

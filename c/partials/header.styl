@@ -1,36 +1,87 @@
 header.site
-  bt 3px solid link
+  m 0 0 1.5em
+  bt 3px solid #888
   bb 1px solid #ddd
-  m 0 0 3em
+  background linear-gradient(top, m250, m230)
   nav
     cnt()
+    bx 1px solid w30
     ul
+      bl 1px solid b10
       clearfix()
       li
-        &.branding
-          col 4
-          h1 a
+        float left
+        br 1px solid b10
+        clearfix()
+        relative()
+        a
+          bx 1px solid #fff
+          d block
+          p 0 1em
+          lh x*3
+          c txt
+          text-shadow #fff 0 1px 0
+          &:hover
+            background linear-gradient(top, w30, w10 30%, b1)
+          
+        &.active
+          &:after
+            content ''
             d block
-            f bold 2em/3 sans
+            w 100%
+            h 3px
+            bg link
+            absolute top -3px left 0
+          a
+            c link
+        
+        &.search
+          form
+            bx 1px solid w30
+            p x*.5 1em
+            input
+              border-radius 1em
+              span 3
+              pl .5em
+            
+        &.branding
+          h1 a
+            f bold italic 1.25em serif
             ls -1px
-            c txt
-        &.login
-          col 8
-          p 1.5em 0 .75em cw*2
-          clearfix()
-          ul.fields
-            li.field
-              col 2
-              p 0 .5em
-              input[type=email], input[type=password]
-                w 100%
-              input[type=submit]
-                p 0 1.5em
-            li.link
-              p 0 x*.5
-              s 75%
-              lh x*1.5
-              a
-                c txt
-                &:hover
-                  c hover
+            lh x*3
+            c fff
+        &.events-ideas
+          &:after
+            content ''
+            d block
+            h x*3
+            w 1px
+            bg #fff
+            absolute top 0 right -2px
+        &.user, &.menu
+          float right
+        &.user
+          bl 1px solid b10
+          &:before
+            content ''
+            d block
+            h x*3
+            w 1px
+            bg #fff
+            absolute top 0 left -2px
+          a
+            clearfix()
+            .avatar
+              f 65% sans
+              ta center
+              w x*2
+              lhh x*2
+              m x*.5
+              border-radius 3px 
+              box-shadow inset b30 1px 1px 3px
+              ml 0
+              bg b15
+              float left
+            span.name
+              d block
+              float left
