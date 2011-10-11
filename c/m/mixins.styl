@@ -22,6 +22,31 @@ span.amp
 *::-webkit-selection
   bg #ffffe0
 
+button-inactive()
+  d inline-block
+  p 0 .7em
+  df()
+  lh x*2 - 2px
+  c #fff
+  ta center
+  aa()
+  ts b50 0 0 5px
+  bg hsl(lhue,0,40)
+  background linear-gradient(top, hsl(lhue,0,50), hsl(lhue,0,30))
+  bs inset w10 0 0 3px, w8 0 1px 0
+  b 1px solid #999
+  border-radius 4px
+  box-shadow inset w75 0 0 1px, w8 0 1px 0
+  cursor pointer
+  &:hover, &:focus
+    c #fff
+    bg hsl(lhue,0,45)
+    background linear-gradient(top, hsl(lhue,0,55), hsl(lhue,0,35))
+  &:active
+    c #fff
+    bg hsl(lhue,0,50)
+    background linear-gradient(top, hsl(lhue,0,45), hsl(lhue,0,30) 45%)
+
 button()
   d inline-block
   p 0 .7em

@@ -5,11 +5,13 @@
   <title>Heya, Wanna?</title>
   <meta name="author" content="Peng Zhong">
   <link rel="stylesheet" media="screen" href="c/style.css?v=1">
+  <!--
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
   <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script> 
   <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.7/underscore-min.js"></script> 
   <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"></script> 
   <script src="js/script.js"></script>
+  -->
 </head>
 
 <body class="home index">
@@ -18,12 +20,14 @@
   <nav>
     <ul>
       <li class="branding"><h1><a href="#">Heya, Wanna?</a></h1>
-      <li class="search"><form><input type="text" placeholder="Search&hellip;"></form>
+      <li class="search"><form><input type="text" placeholder="I want to&hellip;"></form>
       <li class="news-feed active"><a href="#">News Feed</a>
       <li class="events-ideas"><a href="#">Events &amp; Ideas</a>
       <li class="menu"><a href="#">Menu</a>
       <li class="user"><a href="#">
-        <div class="avatar">Avtr</div>
+        <div class="avatar">
+          <img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+        </div>
         <span class="name">Li-Ou Leo</span>
       </a>
 
@@ -44,22 +48,22 @@
         <li class="post">
           <div class="left">
             <div class="thumbnail">
-              <div class="img">Image</div>
+              <img src="i/event/21/profile.jpg">
             </div>
             <div class="interest">
               <p><strong>5</strong> of your friends are interested.</p>
               <ul class="avatars">
-                <li class="avatar">A
-                <li class="avatar">B
-                <li class="avatar">C
-                <li class="avatar">D
-                <li class="avatar">E
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
               </ul>
             </div>
           </div>
-          <div class="avatar">
-            <div class="avatar" alt="Avatar" src="#">
-          </div>
+          <a class="poster avatar" href="#">
+            <img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+          </a>
           <div class="content">
             <p class="title"><a href="#">($29 for 2) have brunch @ Brunch Drunk Love <span class="time">on Monday</span></a></p>
             <div class="desc">
@@ -69,20 +73,26 @@
             </div>
             <ul class="comments">
               <li class="comment">
-                <div class="avatar"></div>
+                <a class="author avatar" href="#">
+                  <img src="http://graph.facebook.com/700652/picture?type=square">
+                </a>
                 <div class="body">
-                  <p><a class="author" href="#">Joe Smith</a> Random comment content.</p>
+                  <p><a class="author" href="#">Amy Wong</a> Random comment content.</p>
                   <p class="meta"><span class="date">3 minutes ago</span></p>
                <li class="comment">
-                <div class="avatar"></div>
+                <a class="author avatar" href="#">
+                  <img src="http://graph.facebook.com/506315/picture?type=square">
+                </a>
                 <div class="body">
-                  <p><a class="author" href="#">April Ryan</a> Random comment content.</p>
+                  <p><a class="author" href="#">Li-Ou Leo</a> Random comment content.</p>
                   <p class="meta"><span class="date">3 minutes ago</span></p>
                 </div>
               <li class="comment">
-                <div class="avatar"></div>
+                <a class="author avatar" href="#">
+                  <img src="http://graph.facebook.com/700652/picture?type=square">
+                </a>
                 <div class="body">
-                  <p><a class="author" href="#">Joe Smith</a> Random comment content.</p>
+                  <p><a class="author" href="#">Amy Wong</a> Random comment content.</p>
                   <p class="meta"><span class="date">3 minutes ago</span></p>
                 </div>
               <li class="comment form">
@@ -90,26 +100,25 @@
              </ul>
           </div>
           <ul class="actions">
-            <li class="join"><a href="#" class="button">Join</a>
+            <li class="leave"><a href="#" class="button">Leave</a>
             <li class="steal"><a href="#">Steal idea</a>
           </ul>
         <li class="post">
           <div class="left">
             <div class="thumbnail">
-              <div class="img">Image</div>
+              <img src="i/event/15/profile.jpg">
             </div>
             <div class="interest">
               <p><strong>2</strong> of your friends are interested.</p>
               <ul class="avatars">
-                <li class="avatar">A
-                <li class="avatar">B
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
               </ul>
             </div>
-
           </div>
-          <div class="avatar">
-            <div class="avatar" alt="Avatar" src="#">
-          </div>
+          <a class="poster avatar" href="#">
+            <img alt="Avatar" src="http://graph.facebook.com/700652/picture?type=square">
+          </a>
           <div class="content">
             <p class="title"><a href="#">See Lion King in 3D <span class="time">on Oct 23</span></a></p>
             <div class="desc">
@@ -117,13 +126,17 @@
             </div>
             <ul class="comments">
               <li class="comment">
-                <div class="avatar"></div>
+                <a class="author avatar" href="#">
+                  <img src="http://graph.facebook.com/700652/picture?type=square">
+                </a>
                 <div class="body">
                   <p><a class="author" href="#">Amy Wong</a> I'M SO EXCITED!!!!</p>
 
                   <p class="meta"><span class="date">2 days ago</span></p>
                <li class="comment">
-                <div class="avatar"></div>
+                <a class="author avatar" href="#">
+                  <img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+                </a>
                 <div class="body">
                   <p><a class="author" href="#">Li-Ou Leo</a> I'm really hoping this works!</p>
                   <p class="meta"><span class="date">17 hours ago</span></p>
@@ -140,18 +153,26 @@
         <li class="post">
           <div class="left">
             <div class="thumbnail">
-              <div class="img">Image</div>
+              <img src="i/event/20/profile.jpg">
             </div>
+            <div class="interest">
+              <p><strong>3</strong> of your friends are interested.</p>
+              <ul class="avatars">
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+                <li class="avatar"><img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+              </ul>
+            </div>
+
           </div>
-          <div class="avatar">
-            <div class="avatar" alt="Avatar" src="#">
-          </div>
+          <a class="poster avatar" href="#">
+            <img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
+          </a>
           <div class="content">
-            <p class="title"><a href="#">($29 for 2) have brunch @ Brunch Drunk Love</a></p>
+            <p class="title"><a href="#">($39 for 4) watch a movie and have snacks <span class="time">on Friday</span></a></p>
             <div class="desc">
-              <p>Up to $61 in value. Brunch includes:</p>
-              <p>- Two appetizers from the "Munchies + Bites" section</p>
-              <p>- One brunch entree on the "From the Griddle" section</p>
+              <p>Deal ends Friday night 11:59pm.</p>
+              <p>4 tickets, 2 medium popcorns, 2 small fountain drinks and 2 kids fun packs (includes 2 jr. drinks, popcorn, and small candy)</p>
             </div>
           </div>
           <ul class="actions">
@@ -163,11 +184,23 @@
 </div><!--main-->
             
 <div id="sidebar">
-  <form>
-    <label>I want to&hellip;</label>
-    <input type="text" placeholder="see a movie">
-    <input type="submit" value="Post">
-  </form>
+  <section>
+    <header>
+      <h2>Placeholder</h2>
+    </header>
+    <div class="content">
+      Content
+    </div>
+  </section>
+  <section>
+    <header>
+      <h2>Placeholder</h2>
+    </header>
+    <div class="content">
+      Content
+    </div>
+  </section>
+
 </div><!--sidebar-->
 
 </div><!--content-->
