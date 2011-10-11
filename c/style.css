@@ -73,21 +73,24 @@ body.home.index #main ul.feeds{background:#fff;}
 body.home.index #main ul.feeds li.feed ul.posts li.post{padding:1.5em 0;zoom:1;border-top:1px solid #ddd;}
 body.home.index #main ul.feeds li.feed ul.posts li.post:before,body.home.index #main ul.feeds li.feed ul.posts li.post:after{content:"";display:table}
 body.home.index #main ul.feeds li.feed ul.posts li.post:after{clear:both}
-body.home.index #main ul.feeds li.feed ul.posts li.post .left{width:120px;float:left;margin:0 1em;}
-body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail{padding:4px;border:1px solid #ccc;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:rgba(0,0,0,0.30) 0 0 1em;-moz-box-shadow:rgba(0,0,0,0.30) 0 0 1em;box-shadow:rgba(0,0,0,0.30) 0 0 1em;margin-bottom:1.5em;}
-body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail img{display:block;width:110px;height:110px;background:#f30}
-body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest{padding-left:5px;}
-body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest p{font-size:12px;color:#999;margin-bottom:.5em}
-body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest ul.avatars li.avatar{float:left;width:32px;height:32px;margin:0 6px 6px 0;}
-body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest ul.avatars li.avatar img{width:32px;height:32px;display:block}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left{width:240px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;margin:0 1.5em 0;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail{margin-bottom:1px;height:240px;width:240px;position:relative;((null)):0;((null)):0;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail img{display:block;width:240px;height:240px;background:#f30}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail .overlay{background:rgba(255,255,255,0.65);padding:.5em .75em;position:absolute;bottom:0;left:0;width:100%;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail .overlay p.title{font-weight:bold}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail .overlay p.time{color:#666;font-size:85%}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .thumbnail .price{display:none}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest p{font-size:12px;color:#999;margin-bottom:.5em;display:none}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest ul.avatars li.avatar{float:left;height:47px;width:47px;margin:0 1px 1px 0;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest ul.avatars li.avatar img{width:100%;display:block}
+body.home.index #main ul.feeds li.feed ul.posts li.post .left .interest ul.avatars li.avatar.empty{background:#eee;font:bold 1.5em/47px "Helvetica Neue",Arial,Helvetica,sans-serif;color:#666;text-align:center}
 body.home.index #main ul.feeds li.feed ul.posts li.post a.poster.avatar{float:left;margin-right:14px;}
-body.home.index #main ul.feeds li.feed ul.posts li.post a.poster.avatar img{height:40px;width:40px;background:#999}
-body.home.index #main ul.feeds li.feed ul.posts li.post .content{width:412px;float:left;}
-body.home.index #main ul.feeds li.feed ul.posts li.post .content p.title a{font:bold 125%/1.3 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#222;}
-body.home.index #main ul.feeds li.feed ul.posts li.post .content p.title a .time{color:#999}
-body.home.index #main ul.feeds li.feed ul.posts li.post .content .desc{color:#999;font-size:12px}
+body.home.index #main ul.feeds li.feed ul.posts li.post a.poster.avatar img{height:47px;width:47px;background:#999}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content{width:281px;float:left;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content p.title{font-weight:bold;color:#222}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content .desc{color:#666;font-size:12px}
 body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments{padding-top:1.5em;font-size:12px;}
-body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment{padding:.5em;background:rgba(0,0,0,0.04);border-top:1px solid #fff;border-bottom:1px solid #ddd;zoom:1;}
+body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment{padding:.5em;border-top:1px solid #fff;border-bottom:1px solid #ddd;background:rgba(0,0,0,0.04);zoom:1;}
 body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment:before,body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment:after{content:"";display:table}
 body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment:after{clear:both}
 body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment.form input{width:100%;font-size:12px}
@@ -97,11 +100,7 @@ body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.
 body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment .body a.author{font-weight:bold}
 body.home.index #main ul.feeds li.feed ul.posts li.post .content ul.comments li.comment .body p.meta{color:#999}
 body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions{width:80px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding-left:1em;}
-body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.join{margin-bottom:.5em}
-body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.leave{margin-bottom:.5em;}
-body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.leave a.button{display:inline-block;padding:0 .7em;font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;line-height:26px;color:#fff;text-align:center;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,0.50) 0 0 5px;background:#666;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #808080), color-stop(1, #4d4d4d));background:-webkit-linear-gradient(top, #808080 0%, #4d4d4d 100%);background:-moz-linear-gradient(top, #808080 0%, #4d4d4d 100%);background:linear-gradient(top, #808080 0%, #4d4d4d 100%);-webkit-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;border:1px solid #999;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;cursor:pointer;}
-body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.leave a.button:hover,body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.leave a.button:focus{color:#fff;background:#737373;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #8c8c8c), color-stop(1, #595959));background:-webkit-linear-gradient(top, #8c8c8c 0%, #595959 100%);background:-moz-linear-gradient(top, #8c8c8c 0%, #595959 100%);background:linear-gradient(top, #8c8c8c 0%, #595959 100%)}
-body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.leave a.button:active{color:#fff;background:#808080;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #737373), color-stop(0.45, #4d4d4d));background:-webkit-linear-gradient(top, #737373 0%, #4d4d4d 45%);background:-moz-linear-gradient(top, #737373 0%, #4d4d4d 45%);background:linear-gradient(top, #737373 0%, #4d4d4d 45%)}
+body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.join a.button,body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.leave a.button{text-transform:uppercase;width:100%;font-weight:bold;line-height:3em;margin-bottom:.5em}
 body.home.index #main ul.feeds li.feed ul.posts li.post ul.actions li.steal a{color:#999;font-size:12px}
 body.home.index #sidebar{padding-left:1.5em;}
 body.home.index #sidebar section{margin-bottom:1.5em;border:1px solid #ddd;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}

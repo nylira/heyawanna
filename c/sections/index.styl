@@ -44,57 +44,70 @@ body.home.index
             bt 1px solid #ddd
 
             .left
-              w 120px
-              float left
-              m 0 1em
+              col 3
+              m 0 1.5em 0
               .thumbnail
-                p 4px
-                b 1px solid #ccc
-                border-radius 5px
-                box-shadow b30 0 0 1em
-                mb 1.5em
+                mb 1px
+                r 240px
+                relative()
 
                 img
                   d block
-                  w 110px
-                  h 110px
+                  w 240px
+                  h 240px
                   bg link
 
+                .overlay
+                  bg w65
+                  p .5em .75em
+                  absolute bottom 0 left 0
+                  w 100%
+                  p.title
+                    fw bold
+                  p.time
+                    c #666
+                    s 85%
+                .price
+                  d none
+
               .interest
-                pl 5px
                 p
                   s 12px
                   c dim
                   mb .5em
+                  d none
                 ul.avatars
                   li.avatar
                     float left
-                    w 32px
-                    h 32px
-                    m 0 6px 6px 0
+                    r 47px
+                    m 0 1px 1px 0
                     img
-                      w 32px
-                      h 32px
+                      w 100%
                       d block
+                    &.empty
+                      bg #eee
+                      f bold 1.5em/47px sans
+                      c #666
+                      ta center
 
             a.poster.avatar
               float left
               mr x
               img
-                h 40px
-                w 40px
+                h 47px
+                w 47px
                 bg #999
 
             .content
-              w cw*6 - 40px - 2*x
+              w cw*5 - 47px - 5*x - 2px
               float left
-              p.title a
-                f bold 125%/1.3 sans
+
+              p.title 
+                fw bold
                 c txt
-                .time
-                  c dim
+
               .desc
-                c dim
+                c #666
                 s 12px
 
               ul.comments
@@ -102,9 +115,9 @@ body.home.index
                 s 12px
                 li.comment
                   p .5em
-                  bg b4
                   bt 1px solid #fff
                   bb 1px solid #ddd
+                  bg b4
                   clearfix()
                   &.form
                     input
@@ -132,16 +145,15 @@ body.home.index
               col 1
               pl 1em
               li
-                &.join
+                &.join a.button, &.leave a.button
+                  tt uppercase
+                  w 100%
+                  fw bold
+                  lh 3em
                   mb .5em
-                &.leave
-                  mb .5em
-                  a.button
-                    button-inactive()
                 &.steal a
                   c dim
                   s 12px
-                  
               
   #sidebar
     pl 1.5em
