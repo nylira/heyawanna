@@ -122,7 +122,7 @@ body.landing.index #content header.landing ul.features li.thumbnail .overlay{bac
 body.landing.index #content header.landing ul.features li.thumbnail .overlay p.title{font-weight:bold}
 body.landing.index #content header.landing ul.features li.thumbnail .overlay p.time{color:#666}
 body.landing.index #content section{border-top:3px double #ddd;padding:3em 0;}
-body.landing.index #content section header h2{font:1.5em/1.5 "Gotham Rounded";margin-bottom:1em}
+body.landing.index #content section header h2{font:1.5em/1.5 "Gotham Rounded","Helvetica Neue",Arial,Helvetica,sans-serif;margin-bottom:1em}
 body.landing.index #content section .content ul{zoom:1}
 body.landing.index #content section .content ul:before,body.landing.index #content section .content ul:after{content:"";display:table}
 body.landing.index #content section .content ul:after{clear:both}
