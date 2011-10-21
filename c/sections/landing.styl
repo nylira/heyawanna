@@ -1,0 +1,185 @@
+body.landing.index
+  header.site
+    nav
+      ul
+        bl none
+        li
+          float right
+          bl 1px solid b10
+
+  #content
+    header.landing
+      clearfix()
+      p 3em 0
+      .introduction
+        col 6
+        pr 3em
+        relative()
+        h1
+          f 4em/1.5 "Gotham Rounded"
+          ls -4px
+          background url(../i/logo.png) no-repeat
+          h 70px
+          w 388px
+          ti -999em
+          mb x
+        h2
+          c dim
+          f .75em/1.5 sans
+          tt uppercase
+          p 0 .5em
+          absolute top 1em right 5em
+
+        p.tagline
+          f 1.5em/1.5 sans
+          c dim
+
+      ul.features
+        col 6
+        li.thumbnail
+          w 480px
+          h 280px
+          relative()
+          .overlay 
+            bg w65
+            p .5em .75em
+            absolute bottom 0 left 0
+            w 100%
+            p 1.5
+            p.title
+              fw bold
+            p.time
+              c #666
+
+
+    section
+      bt 3px double #ddd
+      p 3em 0
+      header
+        h2
+          f 1.5em/1.5 "Gotham Rounded"
+          mb 1em
+      .content
+        ul
+          clearfix()
+
+      &.signup
+        form
+          background linear-gradient(top, m250, m230)
+          b 1px solid #ddd
+          border-radius 5px
+          clearfix()
+          mb 1.5em
+          p 1em 0 1.5em
+          legend
+            f 125%/1.5 sans
+            text-shadow #fff 0 1px 0
+            c #666
+            pl x*1.5
+            pb x*.5
+
+          .mock-url
+            bt 1px solid #999
+            br 1px solid #bbb
+            bb 1px solid #ccc
+            bl 1px solid #aaa
+            box-sizing border-box
+            box-shadow inset b10 1px 1px 4px, #fff 0 1px 0
+            border-radius 3px
+            bg #fff
+            col 8
+            ml x*1.5
+
+            p
+              d inline-block
+              f 150%/1.5 sans
+              p x*.25 - 1px .5em
+              w cw*4 - x*.5
+              ta right
+
+            input[type=text]
+              w cw*4 - x*.5
+              b none
+              box-shadow #000 0 0 0
+              border-radius 0
+              bg #ff0
+              bg hsl(215,75,93)
+              c txt
+              fw bold
+              w cw*4
+              border-radius 0 4px 4px 0
+
+          input
+            f 150%/1.5 sans
+
+          input#signup
+            w cw*4 - x*.75 - x*1.5 - x*1.5
+            f 125%/1.9 sans
+            ml x*.75
+            b 1px solid hsl(215,100,20)
+            background linear-gradient(top, hsl(215,100,50), hsl(215,100,30))
+            &:hover, &:focus
+              background linear-gradient(top, hsl(215,100,55), hsl(215,100,35))
+            &:active
+              background linear-gradient(top, hsl(215,100,45), hsl(215,100,30) 45%)
+
+
+        p.notes
+          p 0 cw*2
+          ta center
+          c dim
+          
+      &.guide
+        ul
+          li
+            w 312px
+            float left
+            mr 12px
+            &.three
+              mr 0
+          
+            .img
+              w 312px
+              h 160px
+              bg #eee
+              b 1px solid #ddd
+              f bold 1.5em/160px sans
+              ta center
+              c dim
+
+            .desc
+              clearfix()
+              p 1.5em 0 0
+              h3
+                f bold 1.5em/40px sans
+                w 40px
+                ta center
+                bg #eee
+                border-radius 20px
+                float left
+              p
+                lh 40px
+                pl 50px
+              ul
+                pl 68px
+                s 85%
+                list-style disc
+                c #666
+
+
+      &.friends
+        ul
+          li
+            col 2
+            w 148px
+            mr 12px
+            &.last-of-type
+              mr 0
+            a
+              d block
+              .img
+                ta center
+                f bold 1.5em/100px sans
+                c dim
+                bg #eee
+                b 1px solid #ddd

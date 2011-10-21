@@ -5,13 +5,9 @@
   <title>Heya, Wanna?</title>
   <meta name="author" content="Peng Zhong">
   <link rel="stylesheet" media="screen" href="c/style.css?v=1">
-  <!--
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
-  <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script> 
-  <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.7/underscore-min.js"></script> 
-  <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"></script> 
-  <script src="js/script.js"></script>
-  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+  <script src="j/jquery.cycle.all.min.js"></script>
+  <script src="j/script.js"></script>
 </head>
 
 <body class="landing index">
@@ -19,24 +15,98 @@
 <header class="site">
   <nav>
     <ul>
-      <li class="branding active"><h1><a href="#">Heya, Wanna?</a></h1>
-      <li class="search"><form><input type="text" placeholder="I want to&hellip;"></form>
-      <li class="news-feed"><a href="#">News Feed</a>
-      <li class="events-ideas"><a href="#">Events &amp; Ideas</a>
-      <li class="menu"><a href="#">Menu</a>
-      <li class="user"><a href="#">
-        <div class="avatar">
-          <img alt="Avatar" src="http://graph.facebook.com/506315/picture?type=square">
-        </div>
-        <span class="name">Li-Ou Leo</span>
-      </a>
-
+      <li><a href="/login">Login &#9660;</a>
     </ul>
   </nav>
 </header>
 
 <div id="content">
 
+  <header class="landing">
+    <div class="introduction">
+      <h1>Heya! Wanna&hellip;?</h1>
+      <h2>Beta</h2>
+      <p class="tagline">Getting a group of friends together shouldn't be so difficult.
+    </div>
+    <ul class="features">
+      <li class="thumbnail">
+        <img src="i/brunch.jpg">
+        <div class="overlay">
+          <p class="title">Brunch at Brunch Drunk Love</p>
+          <p class="time">Monday 11am</p>
+        </div>
+      <li class="thumbnail">
+        <div class="img"></div>
+        <img src="i/lionking.jpg">
+        <div class="overlay">
+          <p class="title">Watch Lion King in 3D</p>
+          <p class="time">Monday 11am</p>
+        </div>
+    </ul>
+  </header>
+
+  <!--<p class="shortline">Discover. Share. Experience.-->
+  
+  <section class="signup"> 
+    <form>
+      <legend>Sign up! Early users get first dibs.</legend>
+      <div class="mock-url">
+        <p>www.heyawanna.com/profile/</p>
+        <input type="text" name="email" placeholder="Your Name">
+      </div>
+      <input type="submit" id="signup" value="Register with Facebook">
+    </form>
+    <p class="notes">Register with Facebook so that your friends are insta-added! We won’t send spam (except the yummy, edible kind). No Facebook? Start from scratch by <a href="#">registering here</a>.
+  </section>
+    
+  <section class="guide">
+    <header>
+      <h2>It couldn't be simpler or easier to use.</h2>
+    </header>
+    <div class="content">
+      <ul class="steps">
+        <li class="step one">
+          <div class="img">Step 1</div>
+          <div class="desc">
+            <h3>1</h3>
+            <p>Create your own list of wannas.</p>
+            <ul>
+              <li>Pick from our top lists
+              <li>Or create your own
+            </ul>
+          </div>
+        <li class="step two">
+          <div class="img">Step 2</div>
+          <div class="desc">
+            <h3>2</h3>
+            <p>Share it with your friends.
+          </div>
+        <li class="step three">
+          <div class="img">Step 3</div>
+          <div class="desc">
+            <h3>3</h3>
+            <p>Coordinate and have fun!
+          </div>
+      </ul>
+    </div>
+  </section>
+            
+  <section class="friends">
+    <header>
+      <h2>These folks just joined the site.</h2>
+    </header>
+    <div class="content">
+      <ul>
+        <li><a href="#"><div class="img">img</div></a>
+        <li><a href="#"><div class="img">img</div></a>
+        <li><a href="#"><div class="img">img</div></a>
+        <li><a href="#"><div class="img">img</div></a>
+        <li><a href="#"><div class="img">img</div></a>
+        <li><a href="#"><div class="img">img</div></a>
+      </ul>
+    </div>
+  </section>
+    
 </div><!--content-->
 
 <footer class="site">
