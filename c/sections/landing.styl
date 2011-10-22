@@ -150,21 +150,30 @@ body.landing.index
                   ml x*1.5
 
                   p
-                    col 4
-                    w cw*4 - x*1.5 - 2px
-                    f 150% sans
+                    col 5
+                    w cw*5 - x*1.5 - 2px
+                    f 200% sans
                     lh x*3 - 2px
-                    p 0 .8em
+                    pl .5em
+                    color #777
+                    span.bright
+                      color #000
+
+                  input::-webkit-input-placeholder
+                    color link
+                  input:-moz-placeholder
+                    color link
 
                   input[type=text]
-                    col 5
+                    col 3
                     b none
                     box-shadow #000 0 0 0 
-                    f bold 150% sans
+                    f bold 200% sans
                     lh x*3 - 2px
-                    c link
+                    p 0 0 0 .4em
                     bg transparent
                     border-radius 0 4px 4px 0
+
 
               &.submit
                 col 3
