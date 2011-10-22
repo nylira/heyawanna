@@ -132,12 +132,12 @@ body.landing.index header.landing .container .introduction h1{font:4em/1.5 "Goth
 body.landing.index header.landing .container .introduction h2{color:rgba(255,255,255,0.50);font:bold .75em/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;text-transform:uppercase;padding:0 .5em;-webkit-font-smoothing:antialiased;position:absolute;top:1em;right:4em}
 body.landing.index header.landing .container .introduction p.tagline{font:2em/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;color:rgba(255,255,255,0.75)}
 body.landing.index header.landing .container .features{width:480px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;-webkit-box-shadow:rgba(0,0,0,0.30) 0 0 2em;-moz-box-shadow:rgba(0,0,0,0.30) 0 0 2em;box-shadow:rgba(0,0,0,0.30) 0 0 2em;}
-body.landing.index header.landing .container .features ul.thumbs{background:#fff;zoom:1;}
+body.landing.index header.landing .container .features ul.thumbs{background:#fff;zoom:1;width:480px;height:280px;}
 body.landing.index header.landing .container .features ul.thumbs:before,body.landing.index header.landing .container .features ul.thumbs:after{content:"";display:table}
 body.landing.index header.landing .container .features ul.thumbs:after{clear:both}
-body.landing.index header.landing .container .features ul.thumbs li.thumb{width:480px;height:280px;position:relative;((null)):0;((null)):0;padding:10px;}
+body.landing.index header.landing .container .features ul.thumbs li.thumb{position:relative;((null)):0;((null)):0;margin:10px;}
 body.landing.index header.landing .container .features ul.thumbs li.thumb img{width:460px;height:260px}
-body.landing.index header.landing .container .features ul.thumbs li.thumb .overlay{background:rgba(255,255,255,0.65);padding:.5em .75em;position:absolute;bottom:10px;left:10px;width:100%;padding:1.5;}
+body.landing.index header.landing .container .features ul.thumbs li.thumb .overlay{background:rgba(255,255,255,0.65);padding:.5em .75em;position:absolute;bottom:0;left:0;width:100%;padding:1.5;}
 body.landing.index header.landing .container .features ul.thumbs li.thumb .overlay p.title{font-weight:bold}
 body.landing.index header.landing .container .features ul.thumbs li.thumb .overlay p.time{color:#666}
 body.landing.index #content section{border-top:3px double #ddd;padding:3em 0;}
