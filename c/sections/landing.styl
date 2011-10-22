@@ -1,16 +1,61 @@
 body.landing.index
   header.site
+    mb 0
+    bb 1px solid #bbb
     nav
-      ul
+      ul.site
         bl none
-        li
+        li.tab
           float right
           bl 1px solid b10
+          relative()
+          &.login
+            form.login
+              position absolute
+              top x*3 + 1px
+              right 0
+              w cw*6 - x
+              z 1000
+              background #fff
+              border-radius 0 0 5px 5px
+              box-shadow b30 0 1em 1em
+              b 1px solid #ddd
+              bt none
+              d none
+              opacity 0
+              transition()
+              &.visible
+                opacity 1
+                d block
+              
+              ul.fields
+                p 1em 0 .5em 1em
+                clearfix()
+                li.field
+                  col 2
+                  w cw*2 - x
+                  p 0 1em .5em 0
+                  input[type=email], input[type=password], input[type=submit]
+                    w 100%
+                li.link
+                  s 75%
+                  lh x*1.5
+                  input
+                    pr .4em
+                  a
+                    c txt
+                    &:hover
+                      c hover
 
-  #content
-    header.landing
-      clearfix()
-      p 3em 0
+  header.landing
+    clearfix()
+    p 3em 0
+    bg hsl(lhue,100,53)
+    background linear-gradient(top, hsl(lhue,100,55), hsl(lhue,100,45))
+    bt 1px solid hsl(lhue,100,75)
+    bb 1px solid hsl(lhue,100,35)
+    .container
+      cnt()
       .introduction
         col 6
         pr 3em
@@ -19,51 +64,61 @@ body.landing.index
           f 4em/1.5 "Gotham Rounded"
           ls -4px
           background url(../i/logo.png) no-repeat
-          h 70px
-          w 388px
+          h 140px
+          w 480px
+          ml -25px
           ti -999em
-          mb x
         h2
-          c dim
-          f .75em/1.5 sans
+          c w50
+          f bold .75em/1.5 sans
           tt uppercase
           p 0 .5em
-          absolute top 1em right 5em
+          aa()
+          absolute top 1em right 4em
 
         p.tagline
-          f 1.5em/1.5 sans
-          c dim
-
-      ul.features
+          f 2em/1.5 sans
+          c w75
+      .features
         col 6
-        li.thumbnail
-          w 480px
-          h 280px
-          relative()
-          .overlay 
-            bg w65
-            p .5em .75em
-            absolute bottom 0 left 0
-            w 100%
-            p 1.5
-            p.title
-              fw bold
-            p.time
-              c #666
+        box-shadow b30 0 0 2em
+        ul.thumbs
+          bg #fff
+          clearfix()
+          li.thumb
+            w 480px
+            h 280px
+            relative()
+            p 10px
+            img
+              w 460px
+              h 260px
+            .overlay 
+              bg w65
+              p .5em .75em
+              absolute bottom 10px left 10px
+              w 100%
+              p 1.5
+              p.title
+                fw bold
+              p.time
+                c #666
 
-
+  #content
     section
       bt 3px double #ddd
       p 3em 0
       header
         h2
-          f 1.5em/1.5 "Gotham Rounded", sans
+          f 2em/1.5 "Gotham Rounded", sans
           mb 1em
+          ta center
       .content
         ul
           clearfix()
 
       &.signup
+        bt none
         form
           background linear-gradient(top, m250, m230)
           b 1px solid #ddd
@@ -78,50 +133,77 @@ body.landing.index
             pl x*1.5
             pb x*.5
 
-          .mock-url
-            bt 1px solid #999
-            br 1px solid #bbb
-            bb 1px solid #ccc
-            bl 1px solid #aaa
-            box-sizing border-box
-            box-shadow inset b10 1px 1px 4px, #fff 0 1px 0
-            border-radius 3px
-            bg #fff
-            col 8
-            ml x*1.5
+          ul.fields
+            li.field
+              &.url
+                col 9
+                .mock-url
+                  bt 1px solid #999
+                  br 1px solid #bbb
+                  bb 1px solid #ccc
+                  bl 1px solid #aaa
+                  box-sizing border-box
+                  box-shadow inset b10 1px 1px 4px, #fff 0 1px 0
+                  border-radius 3px
+                  bg #fff
+                  clearfix()
+                  ml x*1.5
 
-            p
-              d inline-block
-              f 150%/1.5 sans
-              p x*.25 - 1px .5em
-              w cw*4 - x*.5
-              ta right
+                  p
+                    col 4
+                    w cw*4 - x*1.5 - 2px
+                    f 150%/2 sans
+                    p 0 .8em
 
-            input[type=text]
-              w cw*4 - x*.5
-              b none
-              box-shadow #000 0 0 0
-              border-radius 0
-              bg #ff0
-              bg hsl(215,75,93)
-              c txt
-              fw bold
-              w cw*4
-              border-radius 0 4px 4px 0
+                  input[type=text]
+                    col 5
+                    b none
+                    box-shadow #000 0 0 0 
+                    f bold 150%/2 sans
+                    c link
+                    bg transparent
+                    border-radius 0 4px 4px 0
 
-          input
-            f 150%/1.5 sans
-
-          input#signup
-            w cw*4 - x*.75 - x*1.5 - x*1.5
-            f 125%/1.9 sans
-            ml x*.75
-            b 1px solid hsl(215,100,20)
-            background linear-gradient(top, hsl(215,100,50), hsl(215,100,30))
-            &:hover, &:focus
-              background linear-gradient(top, hsl(215,100,55), hsl(215,100,35))
-            &:active
-              background linear-gradient(top, hsl(215,100,45), hsl(215,100,30) 45%)
+              &.submit
+                col 3
+                w cw*3 - 2px
+                p 0 x*1.5
+                button#signup
+                  f 150%/2 sans
+                  b 1px solid hsl(215,100,20)
+                  bg #3f5e97
+                  clearfix()
+                  box-shadow #fff 0 1px 0
+                  text-shadow none
+                  p 0
+                  m 0
+                  w 100%
+                  span
+                    d block
+                    float left
+                    bt 1px solid w25
+                    br 1px solid b30
+                    bb 1px solid w25
+                    bl 1px solid w15
+                    lhh 2em
+                    &.signup
+                      border-radius 2px 0 0 2px
+                      p 0 .5em
+                      text-shadow b30 0 1px 0
+                      w cw*3 - x*3 - x*3 - 4px
+                    &.f
+                      border-radius 0 2px 2px 0
+                      tt lowercase
+                      d block
+                      c #fff
+                      fw bold
+                      ta right
+                      s 2.4em
+                      w x*3
+                      pr 3px
+                      lhh x*3
+                      bg #3f5e97
+                      bb 5px solid #6d81b4
 
 
         p.notes
@@ -152,9 +234,10 @@ body.landing.index
               p 1.5em 0 0
               h3
                 f bold 1.5em/40px sans
+                c #fff
+                bg link
                 w 40px
                 ta center
-                bg #eee
                 border-radius 20px
                 float left
               p

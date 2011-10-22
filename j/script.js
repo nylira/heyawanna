@@ -1,3 +1,7 @@
-$('ul.features').cycle({
-  fx: 'scrollHorz'
-})
+$('#login').click(function() {
+  $('form.login').toggleClass('visible');
+});
+
+$('ul.thumbs').cycle({
+  fx: 'scrollHorz',
+});
